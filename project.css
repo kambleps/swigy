@@ -1,0 +1,200 @@
+*{
+    font-family: 'Mulish', sans-serif;;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0.5px 5px lightgrey;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+}
+.image{
+    height: 55px ;
+    width: 50px ;
+}
+.name{
+    font-weight:10px;
+}
+.location{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.left-side{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.right-side{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px;
+    gap: 50px;
+}
+.right-side > div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+}
+.second-section {
+    width: 95vw;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.second-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+    border-bottom: 0.5px solid lightgray;
+    padding: 30px 10px 10px 10px;
+}
+.second-container > .right {
+    display: flex;
+    gap: 30px;
+}
+.image2 {
+    width: 250px;
+    height: 160px;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+.card {
+    width: 250px;
+    padding: 20px 20px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+.card::before {
+    content: 'PROMOTED';
+    display: block;
+    background-color: #3a3c41;
+    color: white;
+    position: absolute;
+    top: 20px;
+    font-size: 14px;
+    padding: 5px;
+}
+.rating {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    border-bottom: 0.5px solid lightgray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.rate {
+    display: flex;
+    align-items: center;
+    background-color: #db7c38;
+    color: white;
+    padding: 2px;
+    gap: 2px;
+    font-size: 13ssspx;
+}
+.bullet {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+.offer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #8a584b;
+    border-bottom: 0.5px solid lightgray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+button {
+    display: block;
+    margin-top: 5px auto;
+    border: none;
+    color: #5d8ed5;
+    padding: 10px 0px;
+    width: 250px;
+    background-color: white;
+    visibility: hidden;
+    font-weight: bold;
+}
+.card:hover button {
+    visibility: visible;
+}
+.footer img {
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.footer img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+    width: 80vw;
+    padding: 80px; 
+    justify-content: space-between; 
+}
+.footer > div {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+}
+.store {
+    align-items: center;
+}
+.footer > div > b {
+    color: #80807e;
+    font-size: 16px;
+}
+.footer > div > a {
+    color: white;
+    text-decoration: none;
+}
+.footer > div > a:hover{
+    font-weight: bold;
+}
+@media screen and (max-width:600px){
+    .card-container{
+        grid-template-columns: repeat(2,auto);
+    }
+    .footer{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+}
